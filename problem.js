@@ -36,10 +36,15 @@ function checkName(name) {
 
 
 function deleteInvalids(array) {
-    if(deleteInvalids !== "array"){
-        return "invalid"
-    }else{
-        return "valid"
+    if(!Array.isArray(array)){
+        return "Invalid Array";
+
     }
+    let newArray=[];
+    for(let i=0 ; i<array.length ; i++){
+        if(typeof (array[i]) === "number" && !isNaN(array[i])){
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
 }
-console.log(deleteInvalids[80]);
