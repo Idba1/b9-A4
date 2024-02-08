@@ -59,11 +59,9 @@ function password(obj) {
         const userName = obj.name;
         const birth = obj.birthYear;
         const getPassword = websiteName + "#" + userName + "@" + birth;
-        return getPassword;
+        return getPassword;   
     }
 }
-console.log(password({ name: "kolimuddin", birthYear: 1999, siteName: "google" }))
-
 
 
 function monthlySavings(arr, livingCost) {
@@ -88,4 +86,4 @@ function monthlySavings(arr, livingCost) {
         return "earn more";
     }
 }
-// console.log(monthlySavings(100, [ 900 , 2700 , 3400] ))
+
